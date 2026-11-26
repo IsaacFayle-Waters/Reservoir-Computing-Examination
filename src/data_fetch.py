@@ -56,7 +56,7 @@ def kaggle_fetch(
             else f"[No description or metadata found for {kaggle_profile}/{dataset_name}]"
         )
 
-    download_dir = Path(f"./{dataset_name}")
+    download_dir = Path(f"data/{dataset_name}")
     download_dir.mkdir(parents=True, exist_ok=True)
 
     if not any(download_dir.iterdir()):
